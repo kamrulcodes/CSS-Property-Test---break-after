@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html {
+        font-family: helvetica, arial, sans-serif;
+        }
+
+        body {
+        max-width: 800px;
+        margin: 10px auto;
+        }
+
+        article {
+        column-width: 200px;
+        gap: 20px;
+        margin-bottom: 20px;
+        }
+
+        h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+        column-span: all;
+        }
+
+        h2 {
+        font-size: 1.2rem;
+        color: aqua;
+        letter-spacing: 1px;
+        }
+
+        h2.special {
+        color: red;
+        }
+
+        p {
+        line-height: 1.5;
+        break-after: auto;
+        }
+
+        div {
+        break-after: column;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>CSS Property - break-after</h1>
+        <div>
+          <h2>Subheading</h2>
+      
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vitae
+            fringilla mauris. Quisque commodo eget nisi sed pretium. Mauris luctus nec
+            lacus in ultricies. Mauris vitae hendrerit arcu, ac scelerisque lacus.
+            Aliquam lobortis in lacus sit amet posuere. Fusce iaculis urna id neque
+            dapibus, eu lacinia lectus dictum.  
+          </p>
+          <P style="color:red">
+            The div has a <code>break-after: column;</code>
+          </P>
+        </div>
+     
+        <h2>Subheading</h2>
+      
+        <p style="break-after: column;">
+          Praesent condimentum dui dui, sit amet rutrum diam tincidunt eu. Cras
+          suscipit porta leo sit amet rutrum. Sed vehicula ornare tincidunt. Curabitur
+          a ipsum ac diam mattis volutpat ac ut elit. Nullam luctus justo non
+          vestibulum gravida. Morbi metus libero, pharetra non porttitor a, molestie
+          nec nisi.<br/>
+          <span style="color:red;">This paragraph has a <code>break-after: column;</code></span></p>
+        </p>
+      
+        <h2>Subheading</h2>
+      
+        <p>
+          Vivamus eleifend metus vitae neque placerat, eget interdum elit mattis.
+          Donec eu vulputate nibh. Ut turpis leo, malesuada quis nisl nec, volutpat
+          egestas tellus.
+        </p>
+      
+        <h2>Subheading</h2>
+      
+        <p>
+          In finibus viverra enim vel suscipit. Quisque consequat velit eu orci
+          malesuada, ut interdum tortor molestie. Proin sed pellentesque augue. Nam
+          risus justo, faucibus non porta a, congue vel massa. Cras luctus lacus nisl,
+          sed tincidunt velit pharetra ac. Duis suscipit faucibus dui sed ultricies.
+        </p>
+
+        <h2 class="special">🥊️ What to test:</h2>
+      
+        <p>
+          Change the value of <code>break-after: auto;</code> css property from the browser dev 
+          tools and see what happens. In my experiment <code>break-after: column;</code> overflows
+          the container on <strong>Google Chrome!</strong>. And this is NOT OK. This property is 
+          for column break only not for page break. Firefox is also buggy sometimes.
+        </p>
+
+    </article>      
+    <!-- <a style="text-align: center;" href="https://developer.mozilla.org/en-US/docs/Web/CSS/break-after?redirectlocale=en-US&redirectslug=CSS%2Fbreak-after">READ MORE ON PAGE BREAK CSS PROPERTY.</a> -->
+</body>
+</html>
